@@ -17,10 +17,12 @@ jobs:
     steps:
     - name: Clone
       uses: actions/checkout@v2
+      
     - name: Set up JDK 11
       uses: actions/setup-java@v1
       with:
         java-version: 11
+      
     - name: Build with Maven
       run: |
         pushd app
@@ -29,5 +31,5 @@ jobs:
         
     - name: Build docker
       run: |
-        docker build -t suranagivinod/spring-boot-jpa:01
+        docker build -t suranagivinod/spring-boot-jpa:01 .
         

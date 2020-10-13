@@ -33,4 +33,10 @@ jobs:
         cat my_password.txt | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
         docker build -t suranagivinod/spring-boot-jpa:01 .
         docker push suranagivinod/spring-boot-jpa:01
-        
+
+    - name: Build docker2
+      run: |
+        echo ${{ secrets.DOCKERHUB_PASSWORD }} >> my_password.txt  
+        cat my_password.txt | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+        docker build -t suranagivinod/spring-boot-jpa:01 -f openjdk-df .
+        docker push suranagivinod/spring-boot-jpa:02

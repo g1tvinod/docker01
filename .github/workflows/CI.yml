@@ -36,5 +36,5 @@ jobs:
 
     - name: Build docker2
       run: |
-        docker build -t suranagivinod/spring-boot-jpa:01 -f openjdk-df .
+        docker build -t suranagivinod/spring-boot-jpa:02 -f openjdk-df .
         docker push suranagivinod/spring-boot-jpa:02

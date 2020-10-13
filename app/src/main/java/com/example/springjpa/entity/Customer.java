@@ -14,7 +14,9 @@ public class Customer {
 	
 	private String firstName;
 	
-	private String LastName;
+	private String lastName;
+	
+	private int age;
 
 	public Long getId() {
 		return id;
@@ -33,11 +35,19 @@ public class Customer {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
+	}
+	
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	@Override

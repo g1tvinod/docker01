@@ -8,4 +8,4 @@ ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
 ADD app/target/*.jar /home
 
-CMD ["java", "jar", "/home/*.jar"]
+CMD ["java", "-jar", "/home/*.jar"]

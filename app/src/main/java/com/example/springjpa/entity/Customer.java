@@ -42,7 +42,7 @@ public class Customer {
 		this.lastName = lastName;
 	}
 	
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
 

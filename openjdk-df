@@ -1,0 +1,5 @@
+FROM openjdk:11.0.8-jre-slim
+
+ADD app/target/app-1.0.0.jar /home
+
+CMD ["java", "-jar", "/home/app-1.0.0.jar"]
